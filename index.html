@@ -191,10 +191,6 @@ h3{font-size:21px;letter-spacing:-.02em;line-height:1.25}
 .secure{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;font-size:13px;color:var(--muted)}
 .secure span{display:flex;align-items:center;gap:6px}
 .secure svg{width:15px;height:15px}
-.guarantee{display:grid;grid-template-columns:62px 1fr;gap:16px;align-items:center;background:rgba(198,161,106,.1);border-radius:14px;padding:16px 18px}
-.seal{width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#D6B57F,#B8925A);color:#1C140C;display:grid;place-items:center;text-align:center;line-height:1;font-weight:800;font-size:22px;box-shadow:0 10px 20px -10px rgba(169,132,76,.9)}
-.seal small{display:block;font-size:8px;letter-spacing:.16em;font-weight:700;margin-top:2px}
-.guarantee p{font-size:14px;color:var(--text);line-height:1.5}
 @media (max-width:900px){
   .offer .bgphoto{position:relative;width:100%;height:440px;margin-top:-40px}
   .offer .bgphoto img{-webkit-mask-image:linear-gradient(to top,transparent 0%,#000 35%);mask-image:linear-gradient(to top,transparent 0%,#000 35%)}
@@ -303,8 +299,6 @@ footer .logo b{color:var(--white);font-size:19px}
   .incl li{font-size:15px}
   .price{padding:18px 0}
   .price strong{font-size:48px}
-  .guarantee{grid-template-columns:52px 1fr;padding:14px}
-  .seal{width:52px;height:52px;font-size:19px}
   .faq-list{margin-top:32px;gap:10px}
   .faq-list summary{padding:18px;font-size:16px}
   .faq-list details p{padding:0 18px 18px;font-size:15px}
@@ -348,7 +342,6 @@ footer .logo b{color:var(--white);font-size:19px}
       </div>
       <div class="trust">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 3 4 14h7l-1 7 9-11h-7z"/></svg>Acesso imediato</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/></svg>7 dias de garantia</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></svg>Certificado</span>
       </div>
     </div>
@@ -443,17 +436,13 @@ footer .logo b{color:var(--white);font-size:19px}
       </ul>
       <div class="price">
         <small data-preco="de"></small>
-        <strong><sup>12x R$</sup><span data-preco="parcela">24,75</span></strong>
+        <strong><sup>12x R$</sup><span data-preco="parcela">30,72</span></strong>
         <small>ou <span data-preco="avista">R$ 297</span> à vista</small>
       </div>
       <a class="btn btn-gold btn-block" href="#oferta" data-checkout="kiwify">Garantir minha vaga <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <div class="secure">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Compra segura pela Kiwify</span>
         <span>Pix · cartão · boleto</span>
-      </div>
-      <div class="guarantee">
-        <div class="seal">7<small>DIAS</small></div>
-        <p><strong>Garantia incondicional.</strong> Se em 7 dias você sentir que não é para você, devolvemos 100% do valor.</p>
       </div>
     </div>
   </div>
@@ -473,7 +462,6 @@ footer .logo b{color:var(--white);font-size:19px}
       <details><summary>Quanto tempo por dia eu preciso?</summary><p>As aulas são curtas e diretas. Com 20 a 30 minutos por dia você conclui o curso em poucas semanas, no seu ritmo.</p></details>
       <details><summary>Como recebo o acesso?</summary><p>Assim que o pagamento é aprovado, você recebe por e-mail o acesso à área de membros da Kiwify.</p></details>
       <details><summary>Por quanto tempo tenho acesso?</summary><p>Você tem acesso por 12 meses e pode assistir quantas vezes quiser.</p></details>
-      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. É só pedir o reembolso dentro desse prazo.</p></details>
     </div>
     <div class="faq-cta">
       <a class="btn btn-gold" href="#oferta" data-checkout>Quero entrar no Vértice Start <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -491,7 +479,7 @@ footer .logo b{color:var(--white);font-size:19px}
 
 <div class="sticky" id="sticky" aria-hidden="true">
   <div class="sticky-in">
-    <div class="sticky-price"><small>Vértice Start</small><b>12x R$ <span data-preco="parcela">24,75</span></b></div>
+    <div class="sticky-price"><small>Vértice Start</small><b>12x R$ <span data-preco="parcela">30,72</span></b></div>
     <a class="btn btn-gold" href="#oferta" data-checkout tabindex="-1">Quero entrar</a>
   </div>
 </div>
@@ -507,7 +495,7 @@ var CONFIG = {
   metaPixelId: "",          /* ID do Pixel da Meta, ex.: 123456789012345 */
   /* Preço: mude só aqui que a página toda atualiza */
   precoAvista: "R$ 297",
-  parcelas: "24,75",        /* valor de cada parcela em 12x, como aparece no checkout da Kiwify */
+  parcelas: "30,72",        /* valor de cada parcela em 12x, como aparece no checkout da Kiwify */
   precoDe: ""               /* preço "de" riscado, ex.: "R$ 497" (deixe vazio para não mostrar) */
 };
 document.querySelectorAll('[data-preco="avista"]').forEach(function(e){e.textContent=CONFIG.precoAvista});
